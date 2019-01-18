@@ -1,0 +1,36 @@
+.main-content {
+  .top-content {
+    .flex-between;
+
+    @media @mobile {
+      flex-direction: column;
+    }
+
+    .box {
+      .box-style(45%);
+
+      @media @mobile {
+        .box-style(90%);
+      }
+    }
+  }
+
+  img {
+    width: 100%;
+    padding: 25px 0;
+  }
+  .bottom-content {
+    .flex-between;
+
+    @media @mobile {
+      flex-direction: column;
+    }
+    .box {
+      .box-style(30%);
+
+      @media @mobile {
+        .box-style(90%;);
+      }
+    }
+  }
+}
