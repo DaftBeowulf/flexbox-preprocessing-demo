@@ -1,4 +1,4 @@
-let smashSeries = [
+const smashSeries = [
   {
     name: "Legend of Zelda",
     games: 19,
@@ -30,9 +30,23 @@ let smashSeries = [
 ];
 
 // forEach
+// smashSeries.forEach(series => series.games += 1)
+console.log(smashSeries[0]);
 
 // map
+let mappedArr = smashSeries.map(series => series.name.toUpperCase());
+console.log(mappedArr);
+console.log(smashSeries);
 
 // filter
+let filteredAndMappedArr = smashSeries
+  .filter(series => series.games > 15)
+  .map(series => series.name.toUpperCase());
+console.log(filteredAndMappedArr);
 
 // reduce
+let reducedNum = smashSeries.reduce(
+  (runningTotal, currentSeries) => (runningTotal += currentSeries.games),
+  0
+);
+console.log(reducedNum);

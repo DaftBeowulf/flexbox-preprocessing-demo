@@ -215,6 +215,7 @@ header .logout {
   padding: 20px 0;
   align-items: center;
   margin: 0 auto;
+  border: 1px solid red;
 }
 .main-content .top-content .box button {
   width: 125px;
@@ -271,6 +272,7 @@ header .logout {
   padding: 20px 0;
   align-items: center;
   margin: 0 auto;
+  border: 1px solid green;
 }
 .main-content .bottom-content .box button {
   width: 125px;
